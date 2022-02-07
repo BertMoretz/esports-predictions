@@ -1,0 +1,50 @@
+.csgo-logo {
+    width: 280px;
+    height: auto;
+    margin: 0 0 24px;
+    position: relative;
+}
+
+.matches-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 50%;
+    margin: auto;
+}
+
+.csgo-match {
+    margin: 12px 0 12px;
+    border-radius: 2px;
+    border: 2px #dfdfdf solid;
+    padding: 12px 24px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.csgo-match:hover {
+    background-color: #dfdfdf;
+    transition: all 0.2s ease-out;
+}
+
+.matches-header {
+    margin: 32px 0 12px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.left-win {
+    background: -moz-linear-gradient(left, #52c41a 0%, white 50%, #EB2F40 100%);
+    background: -webkit-linear-gradient(left, #52c41a 0%, white 50%, #EB2F40 100%);
+    background: linear-gradient(to right, #52c41a 0%, white 50%, #EB2F40 100%);
+}
+
+.right-win {
+    background: -moz-linear-gradient(right, #52c41a 0%, white 50%, #EB2F40 100%);
+    background: -webkit-linear-gradient(right, #52c41a 0%, white 50%, #EB2F40 100%);
+    background: linear-gradient(to left, #52c41a 0%, white 50%, #EB2F40 100%);
+}

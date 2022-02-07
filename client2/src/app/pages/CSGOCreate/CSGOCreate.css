@@ -1,0 +1,15 @@
+.create-container {
+    padding-top: 120px;
+}
+
+.team-wrapper {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: auto auto;
+}
+
+.team-header {
+    font-size: 40px;
+    margin-bottom: 24px;
+    text-align: center;
+}

@@ -1,0 +1,112 @@
+.csgo-logo {
+    width: 320px;
+    height: auto;
+    margin: 0 0 24px;
+}
+
+.final-result {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.team-name {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.team-players {
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 12px;
+}
+
+.team-info {
+    margin: 0 24px 32px;
+    max-width: 600px;
+}
+
+.first {
+    text-align: right;
+}
+
+.breaker {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 12px;
+}
+
+.rounds-grid {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: 18% 18% 18% 18% 18%;
+    justify-content: center;
+}
+
+.points-prediction {
+    font-size: 40px;
+    width: 100px;
+}
+
+.part-announce {
+    font-size: 32px;
+    text-align: center;
+}
+
+.round-prediction {
+    border: 1px solid #eeeeee;
+    padding: 12px 24px;
+    border-radius: 8px;
+    margin: 0 0 12px;
+}
+
+.round-header {
+    font-size: 18px;
+    text-align: center;
+    margin: 0 0 12px;
+}
+
+.additional-info {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: auto auto;
+}
+
+.submit-button {
+    margin: 24px 0;
+}
+
+.predictions-header {
+    text-align: center;
+    width: 100%;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 12px;
+}
+
+.wrong-caption {
+    color: #EB2F40;
+    /*font-size: 9px;*/
+}
+
+.right-caption {
+    color: #52c41a;
+}
+
+.res-highlight {
+    text-decoration: underline;
+}
+
+.winner {
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    color: #52c41a;
+    margin-bottom: 32px;
+}
+
+.results-aggregation {
+    font-size: 11px;
+    color: #000000;
+}
