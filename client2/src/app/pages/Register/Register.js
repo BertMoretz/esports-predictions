@@ -18,7 +18,7 @@ function Register(props) {
         password: password,
         gender: gender,
       };
-      axios.post("http://localhost:8000/register", data
+      axios.post(`http://${global.config.SERVER_HOST}:8000/register`, data
       ).then( resp => {
         setError(null);
         props.history.push("/login");

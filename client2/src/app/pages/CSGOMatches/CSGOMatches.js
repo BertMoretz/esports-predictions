@@ -11,7 +11,7 @@ const CSGOMatches = (props) => {
   const [closedMatches, setClosedMatches] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:8000/csgomatches', {
+    axios.get(`http://${global.config.SERVER_HOST}:8000/csgomatches`, {
     }).then((response) => {
       console.log(response.data.filter(match => match.isOpen));
       setMatches(response.data.filter(match => match.isOpen));

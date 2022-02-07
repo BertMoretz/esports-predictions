@@ -21,7 +21,7 @@ function Login(props) {
 
   function login() {
     if (username !== "" && password !== "") {
-      axios.get("http://localhost:8000/login", {
+      axios.get(`http://${global.config.SERVER_HOST}:8000/login`, {
         params: {
           login: username,
           password: password

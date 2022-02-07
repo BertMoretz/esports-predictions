@@ -36,7 +36,7 @@ function CSGOCreate(props) {
         players1: [team1Player1, team1Player2, team1Player3, team1Player4, team1Player5],
         players2: [team2Player1, team2Player2, team2Player3, team2Player4, team2Player5]
       };
-      axios.post("http://localhost:8000/create/csgo-match", data
+      axios.post(`http://${global.config.SERVER_HOST}:8000/create/csgo-match`, data
       ).then( resp => {
         setError(null);
         props.history.push("/login");

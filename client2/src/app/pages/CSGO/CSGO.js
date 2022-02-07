@@ -53,7 +53,7 @@ const CSGO = (props) => {
 
   useEffect(() => {
     const matchId = props.match.params.id;
-    axios.get("http://localhost:8000/match-details", {
+    axios.get(`http://${global.config.SERVER_HOST}:8000/match-details`, {
       params: {
         matchId: matchId
       }
@@ -75,7 +75,7 @@ const CSGO = (props) => {
   useEffect(() => {
     if (!matchDetails?.isOpen) {
       const matchId = props.match.params.id;
-      axios.get("http://localhost:8000/predictions-analysis", {
+      axios.get(`http://${global.config.SERVER_HOST}:8000/predictions-analysis`, {
         params: {
           matchId: matchId
         }
@@ -90,7 +90,7 @@ const CSGO = (props) => {
   useEffect(() => {
     const matchId = props.match.params.id;
     const username = auth.getUsername();
-    axios.get("http://localhost:8000/prediction", {
+    axios.get(`http://${global.config.SERVER_HOST}:8000/prediction`, {
       params: {
         matchId: matchId,
         username: username
@@ -139,7 +139,7 @@ const CSGO = (props) => {
       team1: team1Score || 0,
       team2: team2Score || 0
     };
-    axios.post("http://localhost:8000/predict", data
+    axios.post(`http://${global.config.SERVER_HOST}:8000/predict`, data
     ).then( resp => {
       setSubmittedPrediction(
         {
@@ -168,7 +168,7 @@ const CSGO = (props) => {
       team1: team1Score || 0,
       team2: team2Score || 0
     };
-    axios.post("http://localhost:8000/finish-match", data
+    axios.post(`http://${global.config.SERVER_HOST}:8000/finish-match`, data
     ).then( resp => {
       setSubmittedPrediction(
         {
